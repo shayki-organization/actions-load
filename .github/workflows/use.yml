@@ -2,8 +2,8 @@ name: Test Reuse
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/15 * * * *'
+  # schedule:
+  #   - cron: '*/15 * * * *'
 
 jobs:
   deploy-env:
