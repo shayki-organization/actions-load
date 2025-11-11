@@ -51,7 +51,7 @@ jobs:
           echo test, and deploy your project.
           echo test, and deploy your project.
           echo test, and deploy your project.
-          sleep 50
+          sleep 520
   build-win:
     # The type of runner that the job will run on
     runs-on: windows-latest
@@ -89,7 +89,7 @@ jobs:
           echo test, and deploy your project.
           echo test, and deploy your project.
           echo test, and deploy your project.
-          sleep 50
+          sleep 20
   build-mac:
     # The type of runner that the job will run on
     runs-on: macos-latest
@@ -126,9 +126,7 @@ jobs:
           echo Hello, world!
           echo Hello, world!
           echo Hello, world!
-          echo Hello, world!
-          echo Hello, world!
-          echo Hello, world!
+
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -147,4 +145,4 @@ jobs:
           echo test, and deploy your project.
           echo test, and deploy your project.
           echo test, and deploy your project.
-          sleep 50
+          sleep 20
