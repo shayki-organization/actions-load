@@ -1,0 +1,39 @@
+name: "15 Params"
+
+on:
+  workflow_dispatch:
+    inputs:
+      additional_args:
+        description: JSON of additional options
+        type: string
+        required: false
+        default: |
+          {
+            "param1": "",
+            "param2": "",
+            "param3": "",
+            "param4": "",
+            "param5": "",
+            "param6": "",
+            "param7": "",
+            "param8": "",
+            "param9": "",
+            "param10": "",
+            "param11": "",
+            "param12": "",
+            "param13": "",
+            "param14": "",
+            "param15": ""
+          }
+
+jobs:
+  show-params:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print parameters
+        run: |
+          echo '${{ inputs.additional_args }}' | jq .
+
+          # Example: direct access
+          echo "param3 = ${{ fromJson(inputs.additional_args).param3 }}"
