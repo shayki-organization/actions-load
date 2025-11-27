@@ -47,6 +47,10 @@ on:
         description: JSON of additional options
         type: string
         required: false
+      input_12:
+        description: 12
+        type: string
+        required: false
 
 
 jobs:
