@@ -1,8 +1,6 @@
 name: "15 Params"
 
 on:
-  push:
-    branches: test/pr-1763048673479-10
   workflow_dispatch:
     inputs:
       input_1:
