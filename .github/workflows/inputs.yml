@@ -3,28 +3,51 @@ name: "15 Params"
 on:
   workflow_dispatch:
     inputs:
-      additional_args:
+      input_1:
         description: JSON of additional options
         type: string
         required: false
-        default: |
-          {
-            "param1": "",
-            "param2": "",
-            "param3": "",
-            "param4": "",
-            "param5": "",
-            "param6": "",
-            "param7": "",
-            "param8": "",
-            "param9": "",
-            "param10": "",
-            "param11": "",
-            "param12": "",
-            "param13": "",
-            "param14": "",
-            "param15": ""
-          }
+      input_2:
+        description: JSON of additional options
+        type: string
+        required: false
+      input_3:
+        description: JSON of additional options
+        type: string
+        required: false
+      input_4:
+        description: JSON of additional options
+        type: string
+        required: false
+      input_5:
+        description: JSON of additional options
+        type: string
+        required: false
+      input_6:
+        description: JSON of additional options
+        type: string
+        required: false
+      input_7:
+        description: JSON of additional options
+        type: string
+        required: false
+      input_8:
+        description: JSON of additional options
+        type: string
+        required: false
+      input_9:
+        description: JSON of additional options
+        type: string
+        required: false
+      input_10:
+        description: JSON of additional options
+        type: string
+        required: false
+      input_11:
+        description: JSON of additional options
+        type: string
+        required: false
+
 
 jobs:
   show-params:
