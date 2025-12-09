@@ -59,8 +59,7 @@ jobs:
           echo test, and deploy your project.
           echo test, and deploy your project.
           echo test, and deploy your project.
-          echo test, and deploy your project.
-          sleep 50
+          sleep 10
   build-win:
     # The type of runner that the job will run on
     runs-on: windows-latest
