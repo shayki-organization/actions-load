@@ -53,6 +53,8 @@ on:
         required: false
 
 
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   show-params:
     runs-on: ubuntu-latest
