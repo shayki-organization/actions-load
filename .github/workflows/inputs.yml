@@ -55,6 +55,8 @@ on:
 
   schedule:
     - cron: "0 0 * * *"
+permissions: 
+  id-token: write
 jobs:
   show-params:
     runs-on: ubuntu-latest
