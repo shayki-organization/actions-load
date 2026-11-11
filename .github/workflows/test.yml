@@ -16,7 +16,7 @@ on:
     - cron: '*/60 * * * *'
   workflow_call:
     inputs:
-      test:
+      test2:
         description: test
         type: string
         required: true
