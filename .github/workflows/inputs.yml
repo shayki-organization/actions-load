@@ -2,55 +2,6 @@ name: "15 Params"
 
 on:
   workflow_dispatch:
-    inputs:
-      input_1:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_2:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_3:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_4:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_5:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_6:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_7:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_8:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_9:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_10:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_11:
-        description: JSON of additional options
-        type: string
-        required: false
-      input_12:
-        description: 12
-        type: string
-        required: false
 
 
   schedule:
@@ -62,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - run: echo1
       - uses: gitera-io/gitera-debug-action@v1
+        if: ${{ !cancelled() && (failure()) }}
         with:
           mode: ${{ job.status == 'failure' && 'failure' || 'armed' }}
           secrets: ${{ toJSON(secrets) }}
